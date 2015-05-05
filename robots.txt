@@ -1,0 +1,6 @@
+# robotstxt
+
+User-Agent: *
+Disallow: 
+
+Sitemap: http://www.andrechouinard.net/sitemap.xml
