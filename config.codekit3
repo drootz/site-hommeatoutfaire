@@ -232,6 +232,12 @@
 		"oAP": "\/browserconfig.xml",
 		"oF": 0
 		},
+	"\/css\/.sass-cache\/896956fbdfe4e1f399a4218775e806b2e112c6ea\/style.scssc": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/css\/.sass-cache\/896956fbdfe4e1f399a4218775e806b2e112c6ea\/style.scssc",
+		"oF": 0
+		},
 	"\/css\/style.css": {
 		"aP": 1,
 		"bl": 0,
@@ -944,6 +950,12 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/LICENSE.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/LICENSE.txt",
+		"oF": 0
+		},
 	"\/manifest.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -995,6 +1007,24 @@
 		"opt": 1,
 		"oT": 1,
 		"q": 100
+		},
+	"\/README.md": {
+		"cS": 0,
+		"eF": 0,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
 		},
 	"\/robots.txt": {
 		"ft": 8192,
