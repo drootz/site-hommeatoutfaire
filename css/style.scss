@@ -83,7 +83,7 @@ html {
       -webkit-text-size-adjust: 100%; /* 4 */
       -ms-text-size-adjust: 100%; /* 4 */
     }}
-          
+
 
 /**
  * Address `font-family` inconsistency between `textarea` and other form
@@ -197,34 +197,28 @@ h1 {
                     font-size: 1.5em;
                     }}
 
-h4 {
-    font-family: 'open_sanslight';
-    font-size: 1.6em;
+h2 {
+    display: inline;
     margin: 0;
+    font-weight: 600;
+    font-family: open_sanslight, Arial, sans-serif;
+    padding: .3em 0;
+    line-height: auto;
+    font-size: 1.1em;
 }
         @media screen and (min-width: 25em) {
-            h4 {
+            h2 {
                 font-size: 2em;
                 }}
                 @media screen and (min-width: 35.5em) {
-                  h4 {
+                  h2 {
                     font-size: 2.5em;
                     }}
                     @media screen and (min-width: 64em) {
-                      h4 {
+                      h2 {
                         font-size: 3em;
                         }}
 
-h2 {
-  display: inline;
-    margin: 0;
-    font-weight: 400;
-  font-family: 'open_sanslight', Arial, sans-serif;
-  font-size: 1.1em;
-  padding: .3em 0;
-  line-height: auto;
-  
-}
 
 h5 {
     font-size: 0.83em;
@@ -725,40 +719,6 @@ h1 {
     }
 }
 
-h4 {
-    font-family: open_sanslight;
-    font-size: 1.6em;
-    margin: 0
-}
-
-@media screen and (min-width:25em) {
-    h4 {
-        font-size: 2em
-    }
-}
-
-@media screen and (min-width:35.5em) {
-    h4 {
-        font-size: 2.5em
-    }
-}
-
-@media screen and (min-width:64em) {
-    h4 {
-        font-size: 3em
-    }
-}
-
-h2 {
-    display: inline;
-    margin: 0;
-    font-weight: 600;
-    font-family: open_sanslight, Arial, sans-serif;
-    font-size: 1.1em;
-    padding: .3em 0;
-    line-height: auto
-}
-
 h5 {
     font-size: .83em;
     margin: 1.67em 0
@@ -995,17 +955,19 @@ html {
 .header {
     display: block;
     color: #fff;
-    background: #000
+    background: #000;
+    padding-top: 25px;
 }
 
 .slogan, .title {
-    margin-left: 3%;
-    margin-right: 3%
+    margin-left: 10px;
+    margin-right: 10px;
 }
+
 
 @media screen and (min-width:64em) {
     .slogan, .title {
-        margin: 0 1%
+        margin: 0 10px;
     }
 }
 
@@ -1016,48 +978,52 @@ html {
 
 .description {
     background: rgba(0, 0, 0, .6);
-    padding-left: 3%
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
 }
 
 @media screen and (min-width:64em) {
     .description {
-        padding-left: 1%
+        padding-left: 10px;
     }
 }
 
-.description p {
-    display: block;
-    position: absolute;
-    width: 320px;
-    left: -105%
-}
 
-.scroller {
+.scroller-container {
     display: block;
     position: relative;
     width: 100%;
-    background: rgba(0, 0, 0, .3)
+    background: rgba(0, 0, 0, .3);
+    overflow: hidden;
 }
 
-.txt_scroll {
+.txt-scroll {
     display: block;
-    padding-right: 3%;
-    padding-left: 3%
+    width: 6000px;
+    margin: 0;
+    padding: .3em 0;
+    padding-left: 10px;
+        font-family: open_sanslight, Arial, sans-serif;
+        font-size: 1.2em;
+        line-height: auto;
+        text-align: left;
+    animation: scroll 60s infinite alternate linear 3s;
 }
 
 @media screen and (min-width:64em) {
-    .txt_scroll {
-        padding-right: 1%;
-        padding-left: 1%
+    .txt-scroll {
+        padding-left: 10px;
     }
 }
 
-.marquee {
-    font-family: open_sanslight, Arial, sans-serif;
-    font-size: 1.2em;
-    padding: .3em 0;
-    line-height: auto
+
+@keyframes scroll {
+  0%   { margin-left: 0px; }
+  100% { margin-left: -4000px; }
 }
+
 
 .banner {
     position: relative;
@@ -1066,7 +1032,7 @@ html {
     background-size: 100%;
     background-repeat: no-repeat;
     min-height: 12em;
-    line-height: 1.15
+    line-height: 1.15;
 }
 
 @media screen and (min-width:25em) {
@@ -1098,7 +1064,7 @@ html {
     .tel_header {
         display: block;
         float: right;
-        letter-spacing: .1em;
+        // letter-spacing: .1em;
         font-family: open_sanslight, Arial, sans-serif;
         font-weight: 100
     }
@@ -1106,7 +1072,7 @@ html {
 
 @media screen and (min-width:64em) {
     .tel_header {
-        letter-spacing: .2em
+        // letter-spacing: .2em
     }
 }
 
@@ -1141,6 +1107,8 @@ html {
 }
 
 .slogan_bck {
+    font-family: open_sanslight, Arial, sans-serif;
+    font-weight: 100;
     background: rgba(0, 0, 0, .6);
     float: left
 }
@@ -1150,7 +1118,8 @@ html {
     color: #fff
 }
 
-.slogan h3 {
+.slogan h2 {
+    font-family: open_sanslight, Arial, sans-serif;
     display: block;
     float: left;
     font-weight: 100;
@@ -1158,14 +1127,13 @@ html {
 }
 
 @media screen and (min-width:35.5em) {
-    .slogan h3 {
+    .slogan h2 {
         font-size: 2.9em
     }
 }
 
 @media screen and (min-width:64em) {
-    .slogan h3 {
-        font-family: open_sanslight, Arial, sans-serif;
+    .slogan h2 {
         font-size: 3.4em
     }
 }
@@ -1424,7 +1392,7 @@ section {
     background: rgba(0, 0, 0, .6);
     text-align: center;
     font-size: 1.75em;
-    letter-spacing: .2em;
+    // letter-spacing: .2em;
     text-decoration: none;
     line-height: 1.65em;
     z-index: 30
@@ -1449,7 +1417,7 @@ section {
         background: inherit;
         text-align: left;
         font-size: 1.75em;
-        letter-spacing: 0;
+        // letter-spacing: 0;
         text-decoration: none;
         line-height: normal;
         z-index: auto
@@ -1461,6 +1429,23 @@ section {
         padding: .5em 1%;
         font-family: open_sanslight, Arial, sans-serif
     }
+}
+
+
+.fb-share {
+
+  margin: 5px 0;
+  padding-left: 10px;
+  font-family: open_sanslight, Arial, sans-serif;
+
+  a {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .partenaire {
@@ -1531,7 +1516,7 @@ section {
     padding: 0 0 0 .4em;
     line-height: 1.2em;
     font-size: .85em;
-    border-left: 1px solid #fff
+    border-left: 1px solid #fff;
 }
 
 @media screen and (min-width:25em) {
@@ -1558,7 +1543,7 @@ section {
 
 .partenaire a {
     text-decoration: none;
-    color: #fff
+    color: #fff;
 }
 
 .minus {
@@ -1580,16 +1565,19 @@ section {
 }
 
 .copyright {
+    font-family: open_sanslight, Arial, sans-serif;
+    margin-top: 50px;
     padding-top: .75em;
-    text-align: center;
-    font-size: x-small;
-    font-weight: 100
+    text-align: right;
+    font-size: small;
+    font-weight: 100;
+    color: #fff;
+    padding-right: 10px;
 }
 
 @media screen and (min-width:40em) {
     .copyright {
         margin-bottom: 0;
-        font-size: small;
         font-weight: 400
     }
 }
@@ -1601,35 +1589,40 @@ section {
 }
 
 address {
+    font-family: open_sanslight, Arial, sans-serif;
+    box-sizing: border-box;
     display: block;
-    font-size: 80%;
+    font-size: small;
     width: 100%;
-    text-align: center;
-    margin: 1.5em 0 45px;
-    background: rgba(0, 0, 0, .5);
+    text-align: right;
+    margin: 0em 0 50px;
+    // background: rgba(0, 0, 0, .5);
     color: #fff;
-    padding: .75em 0 1.25em
+    padding: .25em 0 1.25em;
+    padding-right: 10px;
+    font-style: normal;
 }
 
 @media screen and (min-width:40em) {
     address {
         margin-bottom: 0;
-        font-size: small;
-        font-weight: 400
+        font-weight: 400;
+        padding-right: 10px;
     }
 }
 
 @media screen and (min-width:64em) {
     address {
-        font-weight: 400
+        font-weight: 400;
+        padding-right: 10px;
     }
 }
+
 
 a.tip2 {
     position: relative;
     text-decoration: underline;
     color: inherit;
-    font-weight: bolder
 }
 
 a.tip2 span {
@@ -1639,34 +1632,22 @@ a.tip2 span {
 a.tip2:hover span {
     display: block;
     position: absolute;
-    left: -12em;
-    padding: .5em;
+    padding: .5em 0;
     content: attr(title);
     min-width: 120px;
-    text-align: center;
+    text-align: right;
     width: auto;
     height: auto;
     white-space: nowrap;
-    top: -30px;
-    background: rgba(0, 0, 0, .5);
+    top: -55px;
+    right: 0px;
+    // background: rgba(0, 0, 0, .5);
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     border-radius: 10px;
     color: #fff;
-    font-size: 1em
-}
-
-a.tip2:hover span:after {
-    position: absolute;
-    display: block;
-    content: "";
-    border-color: rgba(0, 0, 0, .5) transparent transparent;
-    border-style: solid;
-    border-width: 10px;
-    height: 0;
-    width: 0;
-    bottom: -20px;
-    left: 20em
+    font-size: 1.25em;
+    font-weight: 100;
 }
 
 .renovation {
@@ -2030,4 +2011,3 @@ a.tip2:hover span:after {
         page-break-after: avoid
     }
 }
-
